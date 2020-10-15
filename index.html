@@ -40,7 +40,7 @@
 						Styled with <a rel="noopener noreferrer" target="_blank" href="https://getbootstrap.com"><img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/480px-Bootstrap_logo.svg.png"></a>
 					</p>
 					<p class="col-3">
-						Contribute on <a href="https://github.com/sirnino/Commit-Message-Builder"><img alt="Github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"/></a>
+						Contribute on <a href="https://github.com/sirnino/Commit-Message-Builder"><img alt="Github" src="assets/images/gh-white.png"/></a>
 					</p>
 				</div>
 			</div>
@@ -61,7 +61,7 @@
 					</div>
 					<div class=" col-6">
 						<input type="Text" id="scopeText" class="form-control" maxlength="50" name="scope" v-model="scope.ori" v-on:keyup="formatScope"/>
-						<small id="scopeHelp" class="form-text text-muted">Indica la parte del codice oggetto del commit</small>
+						<small id="scopeHelp" class="form-text text-muted" v-text="messages.scope"></small>
 					</div>
 				</div>
 				<div class="row form-group">
@@ -73,7 +73,7 @@
 							maxlength="50" 
 							name="subj"
 							v-model="subject.ori" v-on:keyup="formatSubject"/>
-						<small id="subjHelp" class="form-text text-muted">* Completa la frase: "Se applicato, questo commit..."</small>
+						<small id="subjHelp" class="form-text text-muted" v-text="messages.subject"></small>
 					</div>
 				</div>
 				
@@ -86,9 +86,7 @@
 							cols="72"
 							name="body"
 							v-model="body.ori" v-on:keyup="formatBody"></textarea>
-						<small id="bodyHelp" class="form-text text-muted">
-							Enuncia le ragioni della modifica e le differenze con il comportamento precedente.
-						</small>
+						<small id="bodyHelp" class="form-text text-muted" v-text="messages.body"></small>
 					</div>
 				</div>
 				
@@ -100,13 +98,11 @@
 							type="Text" 
 							name="footer" 
 							v-model="footer.ori" v-on:keyup="formatFooter"/>
-						<small id="footerHelp" class="form-text text-muted">
-							Aggiungi codice e link all'eventuale task di riferimento (e.g. card su trello, issue su JIRA, ecc)
-						</small>
+						<small id="footerHelp" class="form-text text-muted" v-text="messages.footer"></small>
 					</div>
 				</div>
 				
-				<button type="submit" class="btn btn-primary">Genera messaggio di commit</button>
+				<button type="submit" class="btn btn-primary" v-text="messages.submit"></button>
 				
 			</form>
 		</div>
@@ -120,7 +116,7 @@
 				cols="72"
 				v-model="text">
 			</textarea>
-			<input type="button" id="copy" value="Copia negli appunti" class="btn btn-link">
+			<input v-model="messages.toclipboard" type="button" id="copy" class="btn btn-link" @click="copyClipboard">
 		</div>
 	</script>
 

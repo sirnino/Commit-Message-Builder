@@ -7,7 +7,10 @@ Vue.component('textarea-component', {
 
     data(){
         return {
-            text: ""
+            text: "",
+            messages: {
+                toclipboard: "Copy to clipboard"
+            }
         }
     },
 

@@ -1,5 +1,9 @@
 div.jumbotron{
-    background-color: #1c2d41;
+    background: rgb(28,45,65);
+    background: -moz-linear-gradient(360deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    background: -webkit-linear-gradient(360deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    background: linear-gradient(360deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c2d41",endColorstr="#233448",GradientType=1);
     color:white;
 }
 
@@ -11,7 +15,11 @@ textarea{
 footer{
     position: absolute;
     bottom: 0;
-    background-color: #1c2d41;
+    background: rgb(28,45,65);
+    background: -moz-linear-gradient(180deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    background: linear-gradient(180deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c2d41",endColorstr="#233448",GradientType=1);
     color:white;
     height: 60px;
     width:100%;

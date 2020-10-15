@@ -2,6 +2,13 @@ Vue.component('form-component', {
     template: '#form-template',
     data(){
         return {
+            messages:{
+                scope: "Indicate the software module affected by the commit",
+                subject: '* Complete the sentence: "If applied, this commit..."',
+                body: "Explain the reasons of the modification and the differences with the previous behavior",
+                footer: "Add the ID and the link of the corresponding task, if present (e.g. Trello card, JIRA issue, etc)",
+                submit: "Build commit message"
+            },
             types: [
                 {val: 'FEAT', txt: 'FEATURE'},
                 {val: 'FIX', txt: 'BUGFIX'},
