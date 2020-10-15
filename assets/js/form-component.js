@@ -63,8 +63,6 @@ Vue.component('form-component', {
 
         generate(event){
 
-            console.log("Generating...");
-
             var s = (this.scope.formatted.length>0) ? "("+this.scope.formatted+")" : "";
 
             var b = (this.body.formatted.length>0) ? this.body.formatted: "";

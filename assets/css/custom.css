@@ -1,0 +1,23 @@
+div.jumbotron{
+    background-color: #1c2d41;
+    color:white;
+}
+
+textarea{
+    background-color: rgb(239, 239, 239);
+    height: 90%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #1c2d41;
+    color:white;
+    height: 60px;
+    width:100%;
+    padding-top:1rem;
+}
+
+footer img{
+    height: 20px;
+}

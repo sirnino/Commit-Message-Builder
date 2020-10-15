@@ -6,7 +6,7 @@
 	<title>Commit Message Builder</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	</head>
@@ -34,10 +34,10 @@
 						Developed by <a href="/"><img src="https://sirnino.github.io/assets/images/logo.png" alt="Sirnino"/></a>
 					</p>
 					<p class="col-3">
-						Powered by <a href="#"><img alt="Vue" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"></a>
+						Powered by <a rel="noopener noreferrer" target="_blank" href="https://vuejs.org"><img alt="Vue" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"></a>
 					</p>
 					<p class="col-3">
-						Styled with <a href="#"><img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/480px-Bootstrap_logo.svg.png"></a>
+						Styled with <a rel="noopener noreferrer" target="_blank" href="https://getbootstrap.com"><img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/480px-Bootstrap_logo.svg.png"></a>
 					</p>
 					<p class="col-3">
 						Contribute on <a href="https://github.com/sirnino/Commit-Message-Builder"><img alt="Github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png"/></a>
@@ -114,24 +114,19 @@
 
 	<script type="text/x-template" id="textarea-template">
 		<div class="col-6">
-			<div class="row">
-				<div class="col-12">
-					<textarea readonly 
-						style="background-color:#efefef; text-wrap:unrestricted"
-						id="finalMsg"
-						rows="8"
-						cols="72"
-						v-model="text">
-					</textarea>
-				</div>
-			</div>
-			<input class="btn btn-link" @click="copyClipboard" type="button" id="copy" value="Copia negli appunti">
+			<textarea 
+				readonly="readonly" 
+				id="finalMsg" 
+				cols="72"
+				v-model="text">
+			</textarea>
+			<input type="button" id="copy" value="Copia negli appunti" class="btn btn-link">
 		</div>
 	</script>
 
-	<script src="form-component.js"></script>
-	<script src="textarea-component.js"></script>
-	<script src="main.js"></script>
+	<script src="assets/js/form-component.js"></script>
+	<script src="assets/js/textarea-component.js"></script>
+	<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
