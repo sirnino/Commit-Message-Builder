@@ -4,7 +4,7 @@ A simple form to help developers in writing good commit messages.
 
 Stop committing with messages like "stuff", "bugfix", "API++" and any other meaningless messages.
 
-Access the app [https://sirnino.github.io/Commit-Message-Builder/](here)!
+Access the app [here](https://sirnino.github.io/Commit-Message-Builder)!
 
 ## Getting Started
 
