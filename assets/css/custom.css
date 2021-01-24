@@ -21,7 +21,7 @@ textarea{
 
 footer{
     margin-top: 24px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background: rgb(28,45,65);
     background: -moz-linear-gradient(180deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
