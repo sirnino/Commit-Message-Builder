@@ -5,6 +5,13 @@ div.jumbotron{
     background: linear-gradient(360deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c2d41",endColorstr="#233448",GradientType=1);
     color:white;
+    max-height:148px;
+}
+
+div#main-content {
+    position:absolute;
+    left:0px;
+    right:0px;
 }
 
 textarea{
