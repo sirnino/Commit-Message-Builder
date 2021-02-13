@@ -1,3 +1,10 @@
+@media (min-width: 576px) and (max-width: 1199px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl{
+        max-width:100%;
+    }
+}
+
+
 div.jumbotron{
     background: rgb(28,45,65);
     background: -moz-linear-gradient(360deg, rgba(28,45,65,1) 0%, rgba(35,52,72,1) 100%);
@@ -19,6 +26,7 @@ div#main-content {
 textarea{
     background-color: rgb(239, 239, 239);
     height: 90%;
+    max-width:100%;
 }
 
 footer{
